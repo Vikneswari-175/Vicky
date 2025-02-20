@@ -1,0 +1,24 @@
+userName: praveena_1wVYqZ
+accessKey: SABnEX4WGxHfVj5ZqPMp
+platforms:
+  - os: Windows
+    osVersion: 10
+    browserName: Chrome
+    browserVersion: 120.0
+  - os: OS X
+    osVersion: Monterey
+    browserName: Safari
+    browserVersion: 15.6
+  - os: Windows
+    osVersion: 11
+    browserName: Edge
+    browserVersion: latest
+parallelsPerPlatform: 1
+browserstackLocal: false
+buildName: bstack-demo
+buildIdentifier: ${DATE_TIME}
+projectName: py budgie 2 4
+testObservability: true
+networkLogs: true
+consoleLogs: info
+framework: pytest
