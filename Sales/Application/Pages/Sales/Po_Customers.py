@@ -55,14 +55,6 @@ class Cls_Po_Create_Customer(Cls_Po_Login):
 
         # Customer Details
         self.click("xpath", Locators.skip)
-        try:
-            alert = self.driver.switch_to.alert
-            print("Alert text:", alert.text)
-            alert.accept()
-            print("Alert accepted")
-        except NoAlertPresentException:
-            print("No alert present")
-
         self.click("xpath", Locators.Sales_module)
         self.click_by_actions("xpath", Locators.Customer_Module)
         self.click_by_actions("xpath", Locators.Add_NewCustomer)
